@@ -1,0 +1,31 @@
+@import '../../constants.scss';
+
+.news-item-header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: $background-color-base;
+  border-radius: 1em;
+  filter: drop-shadow(0px 0.5em 1em $shadow-color);
+}
+
+.news-item-header-title {
+  font-size: $font-size-heading;
+  line-height: 1.2em;
+  color: $day-break-blue;
+}
+
+.news-item-header-date {
+  font-size: $font-size-sm;
+  color: $date-color;
+}
+
+.news-item-header-description {
+  font-size: $font-size-normal;
+  color: $text-color;
+}
+
+.news-item-header-title-container {
+  display: flex;
+  flex-direction: column;
+}

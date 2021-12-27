@@ -1,0 +1,16 @@
+@import '../../constants.scss';
+
+.news {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1em;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}

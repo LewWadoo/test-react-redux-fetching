@@ -1,0 +1,28 @@
+@import '../../constants.scss';
+
+.button {
+  border-radius: 0.3em;
+  border: 1px solid $day-break-blue;
+  cursor: pointer;
+  outline: none;
+  background-color: $background-color-base;
+  color: $day-break-blue;
+
+  &:focus,
+  &:hover {
+    background-color: $day-break-blue;
+    border: 1px solid $day-break-blue;
+    color: $background-color-base;
+  }
+
+  &--alarm {
+    color: $alarm-color;
+    border: 1px solid $alarm-color;
+    &:focus,
+    &:hover {
+      background-color: $alarm-color;
+      border: 1px solid $alarm-color;
+      color: $background-color-base;
+    }
+  }
+}
