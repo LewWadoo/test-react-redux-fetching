@@ -1,7 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../hooks';
-
 import './App.scss';
 import News from '../news/index';
 import NewsItem from '../news-item/index';

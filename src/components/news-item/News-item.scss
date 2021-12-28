@@ -16,7 +16,18 @@
   flex-direction: column;
 }
 
+.news-item-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .news-item-date {
   font-size: $font-size-sm;
   color: $date-color;
+}
+
+.news-item-author {
+  font-size: $font-size-sm;
+  font-style: italic;
 }

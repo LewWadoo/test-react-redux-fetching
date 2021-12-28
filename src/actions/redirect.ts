@@ -1,5 +1,4 @@
 import { Dispatch } from 'redux';
-// import { CLEAR_REDIRECT, NEED_REDIRECT } from './action-types';
 
 export interface IRedirect {
   type: 'NEED_REDIRECT';

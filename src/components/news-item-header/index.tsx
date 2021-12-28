@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './News-item-header.scss';
-
 import { formatDate } from '../../utilities/date';
 
 interface NewsItemHeaderProps {

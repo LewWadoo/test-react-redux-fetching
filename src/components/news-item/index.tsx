@@ -39,7 +39,10 @@ const NewsItem = (): JSX.Element => {
         <h1 className="news-item-title">
           <a href={article.url}>{article.title}</a>
         </h1>
-        <p className="news-item-date">{formatDate(article.publishedAt)}</p>
+        <div className="news-item-info-container">
+          <p className="news-item-date">{formatDate(article.publishedAt)}</p>
+          <p className="news-item-author">{article.author}</p>
+        </div>
         <p className="news-item-content">{article.content}</p>
       </div>
       <Button
@@ -55,7 +58,7 @@ const NewsItem = (): JSX.Element => {
   const notFoundData = loading ? (
     <Spin />
   ) : (
-    <Alert message="Article not found" />
+    <Alert type="error" message="Article not found" />
   );
 
   const returnData = articleData ? articleData : notFoundData;

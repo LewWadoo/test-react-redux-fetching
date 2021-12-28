@@ -24,7 +24,7 @@ class NewsService {
       const options = {
         method: 'GET',
         headers: {
-          Authorization: API_KEY,
+          'X-Api-Key': API_KEY,
         },
       };
       return fetch(`${fullUrl}`, options);

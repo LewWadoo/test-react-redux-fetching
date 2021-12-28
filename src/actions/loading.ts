@@ -1,5 +1,4 @@
 import { Dispatch } from 'redux';
-// import { CLEAR_LOADING, SET_LOADING } from './action-types';
 
 export interface ISetLoading {
   type: 'SET_LOADING';

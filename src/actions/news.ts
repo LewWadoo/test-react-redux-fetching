@@ -68,7 +68,6 @@ export function fetchNews({
 }: IFetchNewsProps): (dispatch: Dispatch) => Promise<JSONType> {
   return async function (dispatch: Dispatch) {
     dispatch(createActionRequest());
-    // try {
     const response = await newsService.fetchNews({ keyword, page, pageSize });
     if (response.ok) {
       const result = await response.json();
@@ -78,19 +77,5 @@ export function fetchNews({
       dispatch(createActionFail());
       setError(response.statusText);
     }
-    // } catch (error) {
-    //   const message = error;
-    //   //(error &&
-    //   //  error.response &&
-    //   //  error.response.data &&
-    //   //  error.response.data.message) ||
-    //   //error.message ||
-    //   //error.toString();
-    //   // console.log(error);
-
-    // 	dispatch(createActionFail());
-    // 	setError(message);
-    // }
-    // return null;
   };
 }
